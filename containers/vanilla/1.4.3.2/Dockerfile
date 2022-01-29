@@ -32,7 +32,7 @@ LABEL org.label-schema.vcs-ref=$VCS_REF \
 
 # Allow for external data
 VOLUME ["/config"]
-
+EXPOSE 7777
 # Run the server
 WORKDIR /vanilla
 ENTRYPOINT ["./run.sh"]
